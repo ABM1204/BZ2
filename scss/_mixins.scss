@@ -1,0 +1,45 @@
+@mixin placeholder {
+	&:-ms-input-placeholder{
+		@content;
+	}
+	&::-ms-input-placeholder{
+		@content;
+	}
+	&::-webkit-input-placeholder{
+		@content;
+	}
+	& ::-moz-placeholder{
+		@content;
+	}
+	&::placeholder {
+		@content;
+	}
+}
+
+@mixin absolute ($top, $right, $bot, $left){
+	position: absolute;
+	top: $top;
+	left: $left;
+	bottom: $bot;
+	right: $right;
+}
+
+@mixin ex-small{
+	@media screen and (min-width: 480px) {
+		@content;
+	}
+}
+
+@mixin small{
+	@media screen and (min-width: 680px) {
+		@content;
+	}
+}
+@mixin  mid {
+	@media screen and (min-width: 780px) {
+		@content
+	}
+}
+
+
+
