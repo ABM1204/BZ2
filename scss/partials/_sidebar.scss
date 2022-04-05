@@ -1,0 +1,38 @@
+.sidebar{
+    grid-column: 2/4;
+    &__header{
+        background-color: $red;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        margin: 0;
+    }
+    &__list{
+        list-style: none;
+        margin-left: 0;
+        margin-top: 0;
+        background: linear-gradient(to top, $side-gray 100%, #eff0f0 0%);
+        border-right: 1px solid #c1c1c1;
+        margin: 0;
+        padding: 0;
+    }
+    &__list &__link::before{
+        content: url(../images/ic-list.png);
+        padding: 0 15px 0 15px;
+    }
+    &__link{
+        text-decoration: none;
+        color: #000;
+        font-size: 15px;
+        margin: 0;
+    }
+    &__item{
+        padding: 10px 0;
+        border-bottom: 2px solid $gray;
+        margin: 0;
+    }
+    &__item:hover{
+        background: #fff;
+        border-right: 4px solid $red;
+    }
+}

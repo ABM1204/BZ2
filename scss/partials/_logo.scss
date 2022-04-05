@@ -1,0 +1,11 @@
+.logo{
+	font-size: 30px;
+	color: $red;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: $open-sans;
+	font-weight: 300;
+	&__part{
+		color: $black-md;
+	}	
+}

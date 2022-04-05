@@ -1,0 +1,50 @@
+.header{
+	grid-template-rows: minmax(70px, auto);
+	background: $gray-light;
+	&__logo{
+		grid-column: 2/9;
+		align-self: center;
+		justify-self: start;
+		padding-left: 15px;
+		@include ex-small{
+			padding-left: 20px;
+		}
+		@include small{
+			grid-column: 2/5;
+		}
+	}
+	&__activity{
+		grid-column: 2/9;
+		display: flex;
+		height: 70px;
+		background: $gray;
+		@include small{
+			grid-column: 5/9;
+			justify-self: end;
+		}
+	}
+	&__btn{
+		border: none;
+		border-right: 1px solid $gray-light;
+		background: $gray;
+		padding: 0 15px;
+		@include ex-small{
+			padding: 0 20px;
+		}
+	}
+	&__btn:hover{
+		color: $red;
+	}
+	&__bag:hover{
+		color: $red;
+	}
+	&__bag{
+		background: $gray url(../images/ic-bag.svg) 90% 46% no-repeat;
+		padding: 0 45px 0 15px;
+		display: flex;
+		align-items: center;
+		@include ex-small{
+			padding: 0 50px 0 20px;
+		}
+	}
+}

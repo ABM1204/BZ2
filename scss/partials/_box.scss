@@ -1,0 +1,48 @@
+.box{
+    width: 100%;
+    border: 5px solid #fff;
+    margin: 5px;
+    background-color: #fff;
+    &__text{
+        border-bottom: 1px solid #ededed;
+        padding: 0 20px 0 5px;
+        margin-top: 0;
+    }
+    &__sell{
+        padding-left: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        padding-right:18px ;
+        border-right: 1px solid #ededed;
+    }
+    &__dol{
+        font-size: 14px;
+    }
+    &__btn{
+        width: 100px;
+        height: 25px;
+        background:linear-gradient(to top, #e2393e 100%, #ce1e24 0%) ;
+        border-right: 1px solid #c6252b;
+        border: 1px solid #b0191e; 
+        outline: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 600;
+        font-size: 11px;
+        border-radius:3px ;
+        cursor: pointer;
+        margin-bottom: 3px;
+    }
+    &__img{
+        width: 100%;
+    }
+    @include small{
+        width: 100%;
+        &__img{
+            width: 100%;
+        }
+    }
+    @include mid{
+        width: 31.3%;
+    }
+}

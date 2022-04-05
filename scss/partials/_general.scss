@@ -1,0 +1,42 @@
+body {	
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #3e3f3f;
+	background: $gray;
+	font-weight: 500;
+	min-width: 320px;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.all-page{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto 1fr auto auto;
+	min-height: 100vh;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: 1fr repeat(7, minmax(auto, 138px)) 1fr;
+}
+
+
+
+

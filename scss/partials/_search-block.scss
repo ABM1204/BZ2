@@ -1,0 +1,71 @@
+.search-block{
+    .search-block__content{
+        grid-column: 2/9;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        @include small{
+            flex-wrap: wrap;
+            grid-column: 2/9;
+        }
+    }
+    .search-block__col-1{
+        position: relative;
+        width: 100%;
+        @include small{
+            width: 40%;
+        }
+    }
+    .search-block__text{
+        color: $red;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .search-block__input{
+        margin-top: 0;
+        outline: none;
+        border-color: $gray-dark;
+        background-color:$gray-dark;
+        display: inline-block;
+        width: 245px;
+        height: 30px;
+        margin-right:0 ;
+        margin-top: 8px;
+    }
+    .search-block__btn{
+        position: absolute;
+        display: inline-block;
+        margin-top: 16px;
+        width: 33px;
+        height: 30px;
+        background: url(../images/ic-search.svg) 50% 50% no-repeat;
+        background-color: $red;
+        border-color:$red;
+        outline: none;
+        margin-left: 0;
+        @include small{
+            margin-top:8px;
+        }
+    }
+    .search-block__col-2{
+        width: 100%;
+        margin-right: 20px;
+        @include small{
+           justify-self: end;
+           width: 20%;
+        }
+    }
+    .search-block__butter{
+        display: inline-block;
+        background: url(../images/ic-bars.svg)100% 100% no-repeat;
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+    }
+    .search-block__book{
+        display: inline-block;
+        background: url(../images/ic-list.svg)100% 100% no-repeat;
+        width: 30px;
+        height: 30px;
+    }
+}
